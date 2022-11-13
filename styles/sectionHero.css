@@ -1,0 +1,74 @@
+.section__hero{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.section__hero__img img{
+    height: 30em;
+    display: none;
+}
+.titulo__hero{
+    font-size: 3em;
+    color: blue;
+}
+.parrafo__hero{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    text-align: justify;
+}
+.section__hero__informacion{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 7em);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3em;
+}
+.section__formulario__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: start;
+}
+.section__formulario__titulo img{
+    height: 1.4em;
+    display: none;
+}
+.section__icons{
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0em;
+    font-size: 1.7em;
+}
+.section__icons__items{
+    display: flex;
+    gap: 0.3em;
+    background: gray;
+    padding: 0.5em;
+    border-radius: 1em;
+    color: blue;
+    font-weight: bold;
+}
+.section__icons__items img{
+    color: yellow;
+    height: 1em;
+}
+.section__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.4em;
+}
+.section__formulario__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+.section__formulario__item{
+ display: flex;
+ flex-direction: column;
+}

@@ -7,6 +7,7 @@
     <title>Vaccination</title>
     <!-- Styles -->
     <link rel="stylesheet" href="styles/navStyle.css">
+    <link rel="stylesheet" href="styles/sectionHero.css">
 </head>
 <body>
     <!-- Barra de navegacion -->
@@ -28,46 +29,48 @@
         </div>
     </header>
 
+
     <!-- Hero -->
-    <section>
+    <section class="section__hero">
 
         <!-- Texto inicial -->
-        <div>
-            <h1>Fight Virus With Vaccines</h1>
-            <p>Let's stop this pandimic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
-            <div>
-                <div>
-                    <img src="" alt="">
+        <div class="section__hero__informacion">
+            <h1 class="titulo__hero">Fight Virus With Vaccines</h1>
+            <p class="parrafo__hero">Let's stop this pandimic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+            <div class="section__icons">
+                <div class="section__icons__items">
+                    <img src="./assets/journal-check.svg" alt="ico">
                     <p>Best protection</p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="section__icons__items">
+                    <img src="./assets/clipboard-heart.svg" alt="">
                     <p>Selected Vaccines</p>
                 </div>
             </div>
         </div>
         <!-- Imagen -->
-        <div>
-            <!-- <img src="./images/hero.jpg" alt="vaccine"> -->
+        <div class="section__hero__img">
+            <img src="./images/hero.jpg" alt="vaccine">
         </div>
+
         <!-- date flotente -->
-        <div>
-            <div>
-                <img src="" alt="">
+        <div class="section__formulario">
+            <div class="section__formulario__titulo">
+                <img src="./assets/clock-fill.svg" alt="ico">
                 <h3>Schedule your vaccinations</h3>
             </div>
-            <form>
-                <div>
-                    <img src="" alt="">
+            <form class="section__formulario__contenedor">
+                <div class="section__formulario__item">
+                    <img src="" alt="ico">
                     <label for="">Location</label>
                     <input type="text" name="" id="">
                 </div>
-                <div>
+                <div class="section__formulario__item">
                     <img src="" alt="">
                     <label for="">Date</label>
                     <input type="date" name="" id="">
                 </div>
-                <div>
+                <div class="section__formulario__item">
                     <img src="" alt="">
                     <label for="">Vaccine type</label>
                     <select name="" id="">
