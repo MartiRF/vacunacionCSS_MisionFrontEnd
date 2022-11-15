@@ -3,6 +3,113 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    font-family: 'Roboto Mono', monospace;
+    --blanco: #fffffe;
+    --gis: #5f6c7b;
+    --azul--strole:#094067;
+    --azul:#3da9fc;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+}
+
 img{
     height: 2.5em;
+    display: block;
+}
+h1,h2,h3,h4{
+    color: var(--azul--strole);
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--gis);
+}
+/* Header NAV */
+.header__nav {
+    width: 100%;
+    background: var(--blanco);
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    z-index: 200;
+    justify-content: space-between;
+}
+.header__nav__logo{
+    z-index: 1;
+    margin-left: .3em;
+    color: var(--azul);
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.btn{
+    background-color: var(--azul);
+    padding: 1.5em;
+    border-radius: 7%;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+/* Hero */
+.section__hero{
+    margin: 2em;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+.section__hero__informacion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1em;
+    font-size: 1.5em;
+    height:100vh;
+}
+.parrafo__hero{
+    color: var(--gis);
+}
+.section__icons{
+    color: var(--gis);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+.section__icons__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-size: 1em;
+    color: var(--azul--strole);
+}
+.section__icons__items img{
+    height: 1.2em;
+}
+
+/* Desktop query */
+@media only screen and (min-width: 768px){
+    .header__nav{
+        font-size: 1.2em;
+        display: flex;
+        height: 5em;
+        justify-content: space-around;
+    }
+    .header__nav__link{
+        display: flex;
+        gap: 2em;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn{
+        padding: 1em;
+        border-radius: 1em;
+    }
 }

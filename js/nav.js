@@ -1,9 +1,9 @@
-let botonMenuRef = document.getElementById('btn_menu') 
-let menuRef = document.getElementById('btns-options')
-
-botonMenuRef.addEventListener('click',() => {
-    menuRef.style.display = 'flex'
-})
-menuRef.addEventListener('click', () => {
-    menuRef.style.display = 'none'
-})
+function toogleIcoMenu() {
+    let linksMenuVar = document.getElementById("btns-options")
+    console.log(linksMenuVar)
+    if(linksMenuVar.className === "header__nav__link"){
+        linksMenuVar.className += " responsive";
+    }else{
+        linksMenuVar.className = 'header__nav__link'
+    }
+}

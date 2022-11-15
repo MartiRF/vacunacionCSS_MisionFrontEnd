@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaccination</title>
+    <!-- Fonst -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+
     <!-- Styles -->
-    <!-- <link rel="stylesheet" href="styles/navStyle.css"> -->
     <!-- <link rel="stylesheet" href="styles/sectionHero.css"> -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navStyle.css">
 </head>
-<body>
+<body class="body">
     <!-- Barra de navegacion -->
     <header class="header__nav">
         <!-- Logo -->
@@ -25,7 +31,7 @@
             <a href="#" class="header__nav__link__item">Regulation</a>
             <span class="header__nav__link__item btn">Hoax Buster</span>
         </nav>
-        <div id="btn_menu">
+        <div id="btn_menu" class="header__nav__ico" onclick="toogleIcoMenu()">
             <img class="btn__menu" src="./assets/list.svg" alt="menu"/>
         </div>
     </header>
@@ -40,13 +46,16 @@
             <p class="parrafo__hero">Let's stop this pandimic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
             <div class="section__icons">
                 <div class="section__icons__items">
-                    <img src="./assets/journal-check.svg" alt="ico">
+                    <img src="./assets/shield-fill.svg" alt="ico">
                     <p>Best protection</p>
                 </div>
                 <div class="section__icons__items">
-                    <img src="./assets/clipboard-heart.svg" alt="">
+                    <img src="./assets/star-fill.svg" alt="ico">
                     <p>Selected Vaccines</p>
                 </div>
+            </div>
+            <div class="curve">
+                <img src="./assets/wave.svg" alt="">
             </div>
         </div>
         <!-- Imagen -->
@@ -253,6 +262,8 @@
             </div>
         </div>
     </footer>
+
+    
     <script src="./js/nav.js"></script>
 </body>
 </html>
