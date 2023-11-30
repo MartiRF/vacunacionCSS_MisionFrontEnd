@@ -1,0 +1,30 @@
+.emergency{
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emergency__title{
+    gap: 1rem;
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.emergency__contenedor{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 60%;
+}
+.emergency__img{
+    align-items: center;
+    width: 50%;
+    height: auto;
+    max-height: 20rem;
+}
